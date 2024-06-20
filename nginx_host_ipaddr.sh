@@ -13,6 +13,6 @@ pub_ip_addr=$(curl -4 --silent  ipconfig.io)
 #echo "Hostname: $hostname"
 #echo "IP Address: $ip_address"
 
-echo "<h1>Hostname:  $hostname <h1>" > /usr/share/nginx/html/index.html
+echo "<h1>Hostname:  $hostname <h1>" >> /usr/share/nginx/html/index.html
 echo "<h1>Public IP Address: $pub_ip_addr </h1>"  >> /usr/share/nginx/html/index.html
 echo "<h1>Private IP  Address: $pvt_ip_addr </h1>" >> /usr/share/nginx/html/index.html
