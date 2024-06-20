@@ -2,7 +2,7 @@
 
 # Update the system and install required packages
 sudo yum update -y
-sudo yum install -y unzip wget nginx git
+sudo yum install -y unzip wget nginx
 
 # Start and enable Nginx service
 sudo systemctl start nginx
