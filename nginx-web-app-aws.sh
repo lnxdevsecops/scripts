@@ -26,10 +26,10 @@ sudo unzip limupa-digital-products-store-ecommerce.zip
 sudo mv limupa-digital-products-store-ecommerce/* /usr/share/nginx/html
 
 # Download the script from github repo
-git clone https://github.com/lnxdevsecops/scripts.git
+# git clone https://github.com/lnxdevsecops/scripts.git
 
 # Run the nginx_host_ipaddr.sh script if it exists and has execute permissions
 if [ -f ./scripts/nginx_host_ipaddr.sh ]; then
-    sudo chmod +x ./scripts/nginx_host_ipaddr.sh
+    # sudo chmod +x ./scripts/nginx_host_ipaddr.sh
     sudo bash  ./scripts/nginx_host_ipaddr.sh
 fi
