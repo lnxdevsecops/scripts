@@ -11,16 +11,16 @@ sudo systemctl enable nginx
 # Navigate to the /tmp directory to download the zip file
 cd /tmp
 
+# Backup the existing index.html if it exists
+if [ -f /usr/share/nginx/html/index.html ]; then
+    sudo mv /usr/share/nginx/html/index.html /usr/share/nginx/html/index.html.bkp
+fi
+
 # Download the template zip file
 sudo wget https://www.templateshub.net/uploaded-data/limupa-digital-products-store-ecommerce.zip
 
 # Unzip the downloaded file
 sudo unzip limupa-digital-products-store-ecommerce.zip
-
-# Backup the existing index.html if it exists
-if [ -f /usr/share/nginx/html/index.html ]; then
-    sudo mv /usr/share/nginx/html/index.html /usr/share/nginx/html/index.html.bkp
-fi
 
 # Move the unzipped content to the Nginx html directory
 sudo mv limupa-digital-products-store-ecommerce/* /usr/share/nginx/html
